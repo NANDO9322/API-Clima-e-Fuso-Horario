@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Clima e Fuso horario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        #weatherData, #timezoneData {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clima e Fuso Horario</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="cidade" placeholder="Digite a cidade">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" onclick="getData()">Buscar</button>
+            </div>
+        </div>
+        <div id="weatherData"></div> <!--Aqui é onde os dados do clima serão exibidos--> 
+        <div id="timezoneData"></div> <!--Aqui é onde os dados do fuso horário serão exibidos-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
